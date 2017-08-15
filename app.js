@@ -1,14 +1,14 @@
 /**
- * Starting  point of the application.
+ * The starting point of the application.
  *
  * @author Mats Loock
- * @version 1.0.1
+ * @version 1.1.0
  */
 
-'use strict';
+'use strict'
 
-var ra = require('./src/reducedArray');
+var ma = require('./src/my-array')
 
-let result = ra.getTotal([1, 2, 3]);
+let result = ma.getSum([1, 2, 3])
 
-console.log(result);
+console.log(result)

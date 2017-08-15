@@ -1,39 +1,46 @@
 /**
- * Tests for the MyArray namespace.
+ * Tests for the my-array module.
  *
  * @author John Häggerud
  * @author Mats Loock
- * @version 1.0.1
+ * @version 1.1.0
  */
 
-'use strict';
+'use strict'
 
-let ra = require('../src/reducedArray');
-let expect = require('chai').expect;
+const ma = require('../src/my-array')
+const expect = require('chai').expect
 
-describe('Test the getTotal function', function() {
+describe('Test the getSum function', () => {
+  it('Should return 20 passing [4, 5, 6, 5] as an argument', done => {
+    expect(ma.getSum([4, 5, 6, 5])).eql(20)
+    done()
+  })
 
-  it('Should return 20 when called with [4, 5, 6, 5]', function(done) {
-    let sum = ra.getTotal([4, 5, 6, 5]);
-    expect(sum).eql(20);
-    done();
-  });
+  it('Should return 20 passing [4, 5, -6, 5, 12] as an argument', done => {
+    expect(ma.getSum([4, 5, -6, 5, 12])).eql(20)
+    done()
+  })
 
-  it('Should return 20 when called with [4, 5, -6, 5, 12]', function(done) {
-    let sum = ra.getTotal([4, 5, -6, 5, 12]);
-    expect(sum).eql(20);
-    done();
-  });
+  it('Should return 1 passing [1] as an argument', done => {
+    expect(ma.getSum([1])).eql(1)
+    done()
+  })
 
-  it('Should return 1 when called with [1]', function(done) {
-    let sum = ra.getTotal([1]);
-    expect(sum).eql(1);
-    done();
-  });
+  it('Should return 0 passing [] as an argument', done => {
+    expect(ma.getSum([])).eql(0)
+    done()
+  })
 
-  it('Should return 0 when called with []', function(done) {
-    let sum = ra.getTotal([]);
-    expect(sum).eql(0);
-    done();
-  });
-});
+  it('Must throw a TypeError if the source parameter is not an Array.', done => {
+    expect(() => { ma.getSum('Not an array.') }).to.throw(TypeError)
+    done()
+  })
+
+  it('The source array must be untouched.', done => {
+    let arr = [4, 2, 3]
+    ma.getSum(arr)
+    expect(arr).to.eql([4, 2, 3])
+    done()
+  })
+})
