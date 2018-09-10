@@ -2,8 +2,12 @@
 
 - B-nivå
 - [GitBook](https://coursepress.gitbooks.io/1dv021/content/ovningsuppgifter/del1/reducerad-array/)
+- [Lösningsförslag](https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/reduced-array)
 
->__VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbooks.io/1dv021/content/guider/att-komma-igang-med-en-ovningsuppgift/) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
+
+>__VIKTIGT!__ Innan du börjar arbeta med övningsuppgiften är det viktigt att du följer guiden [Att komma igång med en övningsuppgift](https://coursepress.gitbook.io/1dv021/guider/att-komma-igang-med-en-ovningsuppgift) för att lägga till övningsuppgiftens repo till ditt repo för övningsuppgifter.
+
+## Uppgift
 
 Hämta hem övningsuppgiftens repo och lägg tillen .gitignore-fil. Öppna filen `my-array.js` och komplettera funktionen `getSum`.
 
@@ -30,7 +34,3 @@ Genom att köra testerna som kommer med övningsuppgiften kan du undersöka om k
 Funktioner, metoder, etc. som _kan_ komma till användning beroende hur du väljer att lösa uppgiften.
 
 - [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-
-## Lösningsförslag
-
-- [https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/reduced-array](https://github.com/1dv021/exercise-solution-proposals/tree/master/part-1/reduced-array)
