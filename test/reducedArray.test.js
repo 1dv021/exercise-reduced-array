@@ -38,7 +38,7 @@ describe('Test the getSum function', () => {
   })
 
   it('The source array must be untouched.', done => {
-    let arr = [4, 2, 3]
+    const arr = [4, 2, 3]
     ma.getSum(arr)
     expect(arr).to.eql([4, 2, 3])
     done()

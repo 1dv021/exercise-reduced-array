@@ -9,6 +9,6 @@
 
 const ma = require('./src/my-array')
 
-let result = ma.getSum([1, 2, 3])
+const result = ma.getSum([1, 2, 3])
 
 console.log(`${result} [90m=> [32m6[39m`)
